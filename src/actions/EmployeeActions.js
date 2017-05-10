@@ -5,6 +5,7 @@ import {
   EMPLOYEE_CREATE,
   EMPLOYEES_FETCH_SUCCESS,
   EMPLOYEE_SAVE_SUCCESS,
+  EMPLOYEE_FIELDS_RESET
 } from './types';
 
 export const employeeUpdate = ({ prop, value }) => {
@@ -63,3 +64,9 @@ export const employeeDelete = ({ uid }) => {
   };
 };
 
+export const employeeFieldsReset = () => {
+  return {
+    type: EMPLOYEE_FIELDS_RESET,
+    payload: null
+  };
+};
